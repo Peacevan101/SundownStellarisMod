@@ -135,7 +135,7 @@ strike_craft_component_template = {
 	cooldown = 2.0
 	range = @attack_range
 	accuracy = 1.0
-	tracking = 1.0
+	tracking = 0.1
 	
 	health = 40
 	armor = 0
