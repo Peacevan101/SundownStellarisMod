@@ -1,0 +1,35 @@
+############################
+#
+# Sundown's Events
+#
+# Written by Sundown
+#
+############################
+
+namespace = sundown
+
+country_event = {
+	id = sundown.10
+	title = "Zro found"
+	desc = "We found some zro"
+	picture = GFX_evt_mining_station
+	
+	trigger = {
+		NOT = { has_country_flag = free_zro }
+		has_technology = tech_mine_zro
+	}
+	
+	immediate = {
+		set_country_flag = free_zro
+	}
+
+	option = {
+		name = "cool"
+		random_planet_within_border = {
+			limit = {
+				is_colonizable = no
+			}
+			set_deposit = d_zro_deposit_2
+		}
+	}
+}
