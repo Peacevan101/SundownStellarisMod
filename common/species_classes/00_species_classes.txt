@@ -292,7 +292,7 @@ MACHINE = {
 
 	robotic = yes
 	gender = no
-	use_climate_preference = yes
+	use_climate_preference = yes # changed from 'no' to give them habitability
 	portrait_modding = yes
 	
 	leader_age_min = 2
