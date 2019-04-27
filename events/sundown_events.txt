@@ -10,8 +10,8 @@ namespace = sundown
 
 country_event = {
 	id = sundown.10
-	title = "Zro found"
-	desc = "We found some zro"
+	title = event_sundown_10_title
+	desc = event_sundown_10_desc
 	picture = GFX_evt_mining_station
 	
 	trigger = {
@@ -24,7 +24,7 @@ country_event = {
 	}
 
 	option = {
-		name = "cool"
+		name = event_sundown_10_option_accept
 		random_planet_within_border = {
 			limit = {
 				is_colonizable = no

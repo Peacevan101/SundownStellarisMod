@@ -1,0 +1,5 @@
+# contains localization for the sundown balance mod
+l_english:
+ event_sundown_10_title "Zro Deposits Located on [Root.GetHomeWorldName]"
+ event_sundown_10_desc "Following the successful discovery of zro distillation, our researchers have discovered a deposit of the resource on our homeworld."
+ event_sundown_10_option_accept "Cool."
