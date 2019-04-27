@@ -186,6 +186,9 @@ pop_base_with_happiness = {
 pop_habitability = {
 	pop_amenities_usage_mult = 1
 	planet_pops_upkeep_mult = 1
+
+	# make machines build slow on planet
+	pop_assembly_speed = -1.35
 }
 
 # Happiness Levels
