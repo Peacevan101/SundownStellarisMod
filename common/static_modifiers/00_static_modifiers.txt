@@ -188,7 +188,7 @@ pop_habitability = {
 	planet_pops_upkeep_mult = 1
 
 	# make machines build slow on planet
-	pop_assembly_speed = -1.35
+	pop_assembly_speed = -1.45
 }
 
 # Happiness Levels

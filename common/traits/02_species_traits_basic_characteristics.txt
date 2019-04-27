@@ -42,7 +42,7 @@ trait_machine_unit = {
 
 	forced_happiness = yes
 	modifier = {
-		pop_environment_tolerance = 0.20
+		pop_environment_tolerance = 0.30 # originally 2.00, reduced to make machines care about habitability
 	}
 }
 
