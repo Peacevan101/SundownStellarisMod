@@ -1,0 +1,212 @@
+@section_cost = 3000
+
+#Mid2
+ship_section_template = {
+	key = "automated_dreadnought_key_mid"
+	ship_size = buildable_dreadnought
+	fits_on_slot = mid
+	entity = "npf_01_npc_warship_01_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	ai_weight = {
+		factor = 1
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}	
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}	
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		slot_size = small
+		slot_type = weapon
+		is_side_slot = yes
+		locatorname = "small_gun_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		slot_size = small
+		slot_type = weapon
+		is_side_slot = yes
+		locatorname = "small_gun_05"
+	}
+	
+	component_slot = {
+		name = "PD_01"
+		slot_size = point_defence
+		slot_type = weapon
+		locatorname = "small_gun_08"
+	}	
+	
+	component_slot = {
+		name = "PD_02"
+		slot_size = point_defence
+		slot_type = weapon
+		locatorname = "small_gun_09"
+	}	
+	
+	component_slot = {
+		name = "PD_03"
+		slot_size = point_defence
+		slot_type = weapon
+		locatorname = "small_gun_10"
+	}
+	
+	large_utility_slots = 6
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#Mid1
+ship_section_template = {
+	key = "automated_dreadnought_key_fore"
+	ship_size = buildable_dreadnought
+	fits_on_slot = fore
+	entity = "npf_01_npc_warship_01_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	ai_weight = {
+		factor = 3
+	}
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		slot_size = titanic
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		slot_size = extra_large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		slot_size = extra_large
+		slot_type = weapon
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_03"
+		slot_size = extra_large
+		slot_type = weapon
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		slot_size = large
+		slot_type = weapon
+		is_side_slot = yes
+		locatorname = "large_gun_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		slot_size = large
+		slot_type = weapon
+		is_side_slot = yes
+		locatorname = "small_gun_06"
+	}component_slot = {
+		name = "LARGE_GUN_09"
+		slot_size = large
+		slot_type = weapon
+		is_side_slot = yes
+		locatorname = "small_gun_07"
+	}
+	large_utility_slots = 6
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+
+#Mid3
+ship_section_template = {
+	key = "automated_dreadnought_key_stern"
+	ship_size = buildable_dreadnought
+	fits_on_slot = stern
+	entity = "npf_01_npc_warship_01_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_05"
+		slot_size = large
+		slot_type = weapon
+		is_side_slot = yes
+		locatorname = "large_gun_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		slot_size = large
+		slot_type = weapon
+		is_side_slot = yes
+		locatorname = "large_gun_07"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		slot_size = large
+		slot_type = strike_craft
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}	
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		slot_size = large
+		slot_type = strike_craft
+		rotation = -90
+		locatorname = "strike_craft_locator_02"
+	}	
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		slot_size = large
+		slot_type = strike_craft
+		rotation = 90
+		locatorname = "strike_craft_locator_03"
+	}	
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		slot_size = large
+		slot_type = strike_craft
+		rotation = -90
+		locatorname = "strike_craft_locator_04"
+	}	
+	
+	aux_utility_slots = 5
+}
