@@ -24,7 +24,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fission_power" }
 	component_set = "power_core"
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor }
+	size_restriction = { buildable_dreadnought  }
 	upgrades_to = "AUTO_DREADNOUGHT_FUSION_REACTOR"
 	
 	ai_weight = {
@@ -51,7 +51,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fusion_power" }
 	component_set = "power_core"
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor }
+	size_restriction = { buildable_dreadnought  }
 	upgrades_to = "AUTO_DREADNOUGHT_COLD_FUSION_REACTOR"
 	
 	ai_weight = {
@@ -78,7 +78,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_cold_fusion_power" }
 	component_set = "power_core"
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor }
+	size_restriction = { buildable_dreadnought  }
 	upgrades_to = "AUTO_DREADNOUGHT_ANTIMATTER_REACTOR"
 	
 	ai_weight = {
@@ -105,7 +105,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_antimatter_power" }
 	component_set = "power_core"
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor }
+	size_restriction = { buildable_dreadnought  }
 	upgrades_to = "AUTO_DREADNOUGHT_ZERO_POINT_REACTOR"
 	
 	ai_weight = {
@@ -132,7 +132,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_zero_point_power" }
 	component_set = "power_core"
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor }
+	size_restriction = { buildable_dreadnought  }
 	upgrades_to = "AUTO_DREADNOUGHT_DARK_MATTER_REACTOR"
 	
 	ai_weight = {
@@ -160,7 +160,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor }
+	size_restriction = { buildable_dreadnought  }
 	
 	ai_weight = {
 		weight = 6

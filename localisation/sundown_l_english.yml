@@ -1,5 +1,12 @@
 # contains localization for the sundown balance mod
 l_english:
- event_sundown_10_title "Zro Deposits Located on [Root.GetHomeWorldName]"
- event_sundown_10_desc "Following the successful discovery of zro distillation, our researchers have discovered a deposit of the resource on our homeworld."
- event_sundown_10_option_accept "Cool."
+ event_sundown_10_title:0 "Zro Deposits Located on [Root.GetHomeWorldName]"
+ event_sundown_10_desc:0 "Following the successful discovery of zro distillation, our researchers have discovered a deposit of the resource on our homeworld."
+ event_sundown_10_option_accept:0 "Cool."
+ buildable_dreadnought:0 "Dreadnought"
+ buildable_dreadnought_plural:0 "Dreadnoughts"
+ automated_dreadnought_key_fore:0 "Dreadnought Bow"
+ automated_dreadnought_key_mid:0 "Dreadnought Core"
+ automated_dreadnought_key_stern:0 "Dreadnought Stern"
+ tech_buildable_dreadnought:0 "Dreadnoughts"
+ tech_buildable_dreadnought_desc:0 "Study of the ancient warship that patrolled a system near our space now has allowed the design and construction of the greatest flagship in the galaxy for our empire"

@@ -1404,8 +1404,8 @@ ship_design = {
 		slot = "fore"
 
 		component = {
-			slot = "TITANTIC_GUN_01"
-			template = "PERDITION_BEAM_TITAN"
+			slot = "TITANIC_GUN_01"
+			template = "DREAD_BEAM"
 		}		
 		component = {
 			slot = "EXTRA_LARGE_GUN_01"
@@ -1432,27 +1432,27 @@ ship_design = {
 			template = "LARGE_PLASMA_3"
 		}
 		component = {
-			slot = "LARGE_UTILITY_01"
+			slot = "LARGE_UTILITY_1"
 			template = "LARGE_ARMOR_5"
 		}
 		component = {
-			slot = "LARGE_UTILITY_02"
+			slot = "LARGE_UTILITY_2"
 			template = "LARGE_ARMOR_5"
 		}
 		component = {
-			slot = "LARGE_UTILITY_03"
+			slot = "LARGE_UTILITY_3"
 			template = "LARGE_ARMOR_5"
 		}
 		component = {
-			slot = "LARGE_UTILITY_04"
+			slot = "LARGE_UTILITY_4"
 			template = "LARGE_ARMOR_5"
 		}
 		component = {
-			slot = "LARGE_UTILITY_05"
+			slot = "LARGE_UTILITY_5"
 			template = "LARGE_ARMOR_5"
 		}
 		component = {
-			slot = "LARGE_UTILITY_06"
+			slot = "LARGE_UTILITY_6"
 			template = "LARGE_ARMOR_5"
 		}
 	}
@@ -1493,36 +1493,37 @@ ship_design = {
 			template = "SMALL_PLASMA_3"
 		}	
 		component = {
-			slot = "LARGE_UTILITY_01"
+			slot = "LARGE_UTILITY_1"
 			template = "LARGE_SHIELD_5"
 		}	
 		component = {
-			slot = "LARGE_UTILITY_02"
+			slot = "LARGE_UTILITY_2"
 			template = "LARGE_SHIELD_5"
 		}		
 		component = {
-			slot = "LARGE_UTILITY_03"
+			slot = "LARGE_UTILITY_3"
 			template = "LARGE_SHIELD_5"
 		}		
 		component = {
-			slot = "LARGE_UTILITY_04"
+			slot = "LARGE_UTILITY_4"
 			template = "LARGE_SHIELD_5"
 		}		
 		component = {
-			slot = "LARGE_UTILITY_05"
+			slot = "LARGE_UTILITY_5"
 			template = "LARGE_SHIELD_5"
 		}		
 		component = {
-			slot = "LARGE_UTILITY_06"
+			slot = "LARGE_UTILITY_6"
 			template = "LARGE_SHIELD_5"
 		}
 	}
 	section = {
-	
+		template = "automated_dreadnought_key_stern"
+		slot = "stern"
 	
 		component = {
 			slot = "LARGE_GUN_05"
-			template = "Large_PLASMA_3"
+			template = "LARGE_PLASMA_3"
 		}
 		component = {
 			slot = "LARGE_GUN_06"
@@ -1588,8 +1589,8 @@ ship_design = {
 		slot = "fore"
 
 		component = {
-			slot = "TITANTIC_GUN_01"
-			template = "PERDITION_BEAM_TITAN"
+			slot = "TITANIC_GUN_01"
+			template = "DREAD_BEAM"
 		}		
 		component = {
 			slot = "EXTRA_LARGE_GUN_01"
@@ -1616,27 +1617,27 @@ ship_design = {
 			template = "LARGE_PLASMA_3"
 		}
 		component = {
-			slot = "LARGE_UTILITY_01"
+			slot = "LARGE_UTILITY_1"
 			template = "LARGE_ARMOR_5"
 		}
 		component = {
-			slot = "LARGE_UTILITY_02"
+			slot = "LARGE_UTILITY_2"
 			template = "LARGE_ARMOR_5"
 		}
 		component = {
-			slot = "LARGE_UTILITY_03"
+			slot = "LARGE_UTILITY_3"
 			template = "LARGE_ARMOR_5"
 		}
 		component = {
-			slot = "LARGE_UTILITY_04"
+			slot = "LARGE_UTILITY_4"
 			template = "LARGE_ARMOR_5"
 		}
 		component = {
-			slot = "LARGE_UTILITY_05"
+			slot = "LARGE_UTILITY_5"
 			template = "LARGE_ARMOR_5"
 		}
 		component = {
-			slot = "LARGE_UTILITY_06"
+			slot = "LARGE_UTILITY_6"
 			template = "LARGE_ARMOR_5"
 		}
 	}
@@ -1677,36 +1678,37 @@ ship_design = {
 			template = "SMALL_PLASMA_3"
 		}	
 		component = {
-			slot = "LARGE_UTILITY_01"
+			slot = "LARGE_UTILITY_1"
 			template = "LARGE_SHIELD_5"
 		}	
 		component = {
-			slot = "LARGE_UTILITY_02"
+			slot = "LARGE_UTILITY_2"
 			template = "LARGE_SHIELD_5"
 		}		
 		component = {
-			slot = "LARGE_UTILITY_03"
+			slot = "LARGE_UTILITY_3"
 			template = "LARGE_SHIELD_5"
 		}		
 		component = {
-			slot = "LARGE_UTILITY_04"
+			slot = "LARGE_UTILITY_4"
 			template = "LARGE_SHIELD_5"
 		}		
 		component = {
-			slot = "LARGE_UTILITY_05"
+			slot = "LARGE_UTILITY_5"
 			template = "LARGE_SHIELD_5"
 		}		
 		component = {
-			slot = "LARGE_UTILITY_06"
+			slot = "LARGE_UTILITY_6"
 			template = "LARGE_SHIELD_5"
 		}
 	}
 	section = {
-	
+		template = "automated_dreadnought_key_stern"
+		slot = "stern"
 	
 		component = {
 			slot = "LARGE_GUN_05"
-			template = "Large_PLASMA_3"
+			template = "LARGE_PLASMA_3"
 		}
 		component = {
 			slot = "LARGE_GUN_06"
@@ -1721,15 +1723,15 @@ ship_design = {
 			template = "STRIKE_CRAFT_HANGAR_3"
 		}
 		component = {
-			slot = "STRIKE_CRAFT_01"
+			slot = "STRIKE_CRAFT_02"
 			template = "STRIKE_CRAFT_HANGAR_3"
 		}
 		component = {
-			slot = "STRIKE_CRAFT_01"
+			slot = "STRIKE_CRAFT_03"
 			template = "STRIKE_CRAFT_HANGAR_3"
 		}
 		component = {
-			slot = "STRIKE_CRAFT_01"
+			slot = "STRIKE_CRAFT_04"
 			template = "STRIKE_CRAFT_HANGAR_3"
 		}
 		component = {

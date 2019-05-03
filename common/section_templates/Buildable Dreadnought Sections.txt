@@ -126,7 +126,8 @@ ship_section_template = {
 		slot_type = weapon
 		is_side_slot = yes
 		locatorname = "small_gun_06"
-	}component_slot = {
+	}
+	component_slot = {
 		name = "LARGE_GUN_09"
 		slot_size = large
 		slot_type = weapon

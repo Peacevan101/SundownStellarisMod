@@ -14484,7 +14484,7 @@ ship_event = {
 						name = random
 						design = "NAME_Type_37" # Psi Jump Dreadnought
 						graphical_culture = "npf_01"
-						upgradable = yes
+						upgradable = yes ##changed by will
 					}
 					set_location = {
 						target = event_target:disabled_dreadnought_object
@@ -14493,10 +14493,7 @@ ship_event = {
 					}
 				}
 			}
-			owner = { give_technology = { tech = tech_buildable_dreadnought } }
-			add_resource = {
-				alloys = 2500
-			}
+			owner = { give_technology = { tech = tech_buildable_dreadnought } } ##Will
 			hidden_effect = {
 				event_target:disabled_dreadnought_object = { destroy_ambient_object = this }
 				solar_system = {
@@ -14517,7 +14514,7 @@ ship_event = {
 					name = random
 					design = "NAME_Type_46" # Jump Dreadnought
 					graphical_culture = "npf_01"
-					upgradable = yes
+					upgradable = yes ##changed by will
 				}
 				set_location = {
 					target = event_target:disabled_dreadnought_object
@@ -14526,10 +14523,7 @@ ship_event = {
 				}
 			}
 		}
-		owner = { give_technology = { tech = tech_buildable_dreadnought } }
-		add_resource = {
-				alloys = 2500
-			}
+		owner = { give_technology = { tech = tech_buildable_dreadnought } } ##Will
 		hidden_effect = {
 			event_target:disabled_dreadnought_object = { destroy_ambient_object = this }
 			solar_system = {

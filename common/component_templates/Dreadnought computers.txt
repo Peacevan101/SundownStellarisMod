@@ -23,7 +23,7 @@ utility_component_template = {
 	ship_behavior = "line"
 
 	class_restriction = { shipclass_military }
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor  }
+	size_restriction = { buildable_dreadnought }
 	component_set = "combat_computers"
 	upgrades_to = "COMBAT_COMPUTER_AUTO_DREADNOUGHT_LINE_BASIC"
 	
@@ -48,7 +48,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor }
+	size_restriction = { buildable_dreadnought  }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_1" }
@@ -77,7 +77,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor }
+	size_restriction = { buildable_dreadnought  }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_2" }
@@ -106,7 +106,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor }
+	size_restriction = { buildable_dreadnought  }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_3" }
@@ -144,7 +144,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor }
+	size_restriction = { buildable_dreadnought  }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_autonomous" }
@@ -172,7 +172,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { buildable_dreadnought buildable_yamato buildable_executor }
+	size_restriction = { buildable_dreadnought  }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_precognition_interface" }

@@ -291,7 +291,7 @@ weapon_component_template = {
 	prerequisites = { "tech_titans" }
 	component_set = "PERDITION_BEAM"
 	projectile_gfx = "perdition_beam"
-	size_restriction = { titan buildable_dreadnought}
+	size_restriction = { titan }
 	resources = {
 		category = ship_components
 		cost = {
@@ -354,6 +354,46 @@ weapon_component_template = {
 	}
 }
 
+# ## Dread Beam
+weapon_component_template = {
+	key = "DREAD_BEAM"
+	size = titanic
+	entity = "invisible_turret_entity"
+	type = instant
+	prio_projectile = yes
+		
+	icon = "GFX_ship_part_global_pacifier"
+	icon_frame = 1
+	
+	firing_arc = 10.0
+	min_range = 30.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_buildable_dreadnought" }
+	component_set = "DREAD_BEAM"
+	projectile_gfx = "titan_laser"
+	size_restriction = { buildable_dreadnought }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_t6_cost
+			rare_crystals = @titanic_t6_rare
+		}		
+		upkeep = {
+			energy = @titanic_t6_upkeep_energy
+			alloys = @titanic_t6_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
 # ## Titan Lance
 weapon_component_template = {
 	key = "TITAN_LASER"
