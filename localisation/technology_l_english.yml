@@ -52,7 +52,7 @@
  tech_titans_desc:0 "Modeled after the hulking shadows looming in the core systems of Stagnant Ascendancies, the Titan class can be outfitted with X-size weapons."
  tech_colossus:0 "Colossi"
  tech_colossus_desc:0 "Advances in mega-engineering make blur the lines between reality and the fantastical, enabling the construction of Colossus-class military vessels that carry weapons capable of obliterating - or fundamentally altering - entire worlds, with the push of a button."
-  
+
  # Ships upgrades
  tech_corvette_hull_1:0 "Improved Corvette Hulls"
  tech_corvette_hull_1_desc:0 "Advances in building techniques will allow for the construction of sturdier and more durable corvettes."
