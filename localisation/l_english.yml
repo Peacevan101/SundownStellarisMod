@@ -8405,6 +8405,9 @@
  DRONE_STRIKE_CRAFT:0 "Precision Drone"
  AI_STRIKE_CRAFT:0 "Seeker Drones"
 
+ AI_STRIKE_CRAFT_1:0 "Seeker Drones"
+ AI_STRIKE_CRAFT_1_DESC:0 "Fully automated fighter drones hunt down enemy targets with ruthless efficiency."
+
  TORPEDO_1:0 "Space Torpedoes"
  TORPEDO_1_DESC:0 "These torpedoes are essentially very large, slow-moving missiles. They are equipped with more powerful warheads and shield modulators that let them slip unmolested through energy screens."
  TORPEDO_2:0 "Armored Torpedoes"

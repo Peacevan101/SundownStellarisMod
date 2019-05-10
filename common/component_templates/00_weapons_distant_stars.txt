@@ -166,6 +166,7 @@ weapon_component_template = {
 	
 	component_set = "GG_BEAM"
 	prerequisites = { "tech_GG_BEAM_1" }
+	size_restriction = { titan ion_cannon }
 
 	resources = {
 		category = ship_components
