@@ -4,7 +4,8 @@ tech_buildable_dreadnought = {
 	tier = 5
 	category = { voidcraft }
 	weight = 0
-	prerequisites = { "tech_battleships" }
+	#prerequisites = { "tech_battleships" }
+	icon = tech_colossus
 	
 	weight_modifier = {
 		modifier = {

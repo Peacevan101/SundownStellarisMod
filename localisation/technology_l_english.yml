@@ -628,6 +628,8 @@
  tech_yellow_crystal_weapon_1_desc:1 "Crystalline Entities store stellar raditation within their prismatic bodies and can focus it to emit laser-like beams. Using the topaz type's prismatic pattern as a base we can construct laser capacitors that produce energy at a similar wavelength."
  tech_red_crystal_weapon_1:0 "Red Crystal Capacitors"
  tech_red_crystal_weapon_1_desc:1 "Crystalline Entities store stellar raditation within their prismatic bodies and can focus it to emit laser-like beams. Using the ruby type's prismatic pattern as a base we can construct laser capacitors that produce energy at a similar wavelength."
+ tech_ai_drone_1:0 "Seeker Drones"
+ tech_ai_drone_1_desc:1 "Studying remains of the automated Contingency fighter drones could allow us to use these drones on our own ships."
  
  # ###################################
  # Society

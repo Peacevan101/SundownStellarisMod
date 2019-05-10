@@ -374,6 +374,12 @@ weapon_component_template = {
 	component_set = "DREAD_BEAM"
 	projectile_gfx = "titan_laser"
 	size_restriction = { buildable_dreadnought }
+	damage = { min = 20000 max = 30000 }
+	total_fire_time = 60
+	windup = { min = 30 max = 45 }
+	range = 300
+	accuracy = 0.75
+	power = -500
 	resources = {
 		category = ship_components
 		cost = {
@@ -385,6 +391,13 @@ weapon_component_template = {
 			alloys = @titanic_t6_upkeep_alloys
 		}
 	}
+
+	hull_damage = 1.75
+	armor_damage = 1.50
+	shield_damage = 1.00
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	tracking = 0.5
 
 	ai_weight = {
 		weight = 1
