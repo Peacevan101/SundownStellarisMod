@@ -292,7 +292,7 @@ MACHINE = {
 
 	robotic = yes
 	gender = no
-	use_climate_preference = no
+	use_climate_preference = yes # force machines to use climate preferences
 	portrait_modding = yes
 	
 	leader_age_min = 2

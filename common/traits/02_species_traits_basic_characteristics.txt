@@ -42,7 +42,8 @@ trait_machine_unit = {
 
 	forced_happiness = yes
 	modifier = {
-		pop_environment_tolerance = 2.0
+		pop_environment_tolerance = 0.3 # changed to make machines care about habitability (originally 2.0)
+		pc_machine_habitability = 1.0 # can always live on machine worlds
 	}
 }
 
