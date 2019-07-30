@@ -3601,7 +3601,9 @@ ship_event = { #Old Foes Gatekeeper
 				solar_system = {
 					random_system_planet = {
 						limit = { has_planet_flag = czyrni_planet }
-						add_anomaly = DISTAR_FOES_CAT
+						add_anomaly = {
+							category = DISTAR_FOES_CAT
+						}
 					}
 				}	
 			}
@@ -3610,7 +3612,9 @@ ship_event = { #Old Foes Gatekeeper
 				solar_system = {
 					random_system_planet = {
 						limit = { has_planet_flag = pyorun_planet }
-						add_anomaly = DISTAR_FOES_CAT
+						add_anomaly = {
+							category = DISTAR_FOES_CAT
+						}
 					}
 				}
 			}
@@ -6394,7 +6398,9 @@ fleet_event = { #Junkheap Ratlings
 			}
 		}
 		event_target:ratling_capital = {
-			add_anomaly = DISTAR_RAT_CAT
+			add_anomaly = {
+				category = DISTAR_RAT_CAT
+			}
 		}
 	}
 
@@ -8709,7 +8715,9 @@ ship_event = { #on_survey Gatekeeper
 				}
 			}
 			from = {
-				add_anomaly = DISTAR_PHASE_CAT
+				add_anomaly = {
+					category = DISTAR_PHASE_CAT
+				}
 				set_planet_flag = phaseshift_planet_surveyed
 			}
 		}
@@ -9407,61 +9415,65 @@ event = {
 				spawn_system = {
 					min_distance >= 20
 					max_distance <= 30
+					max_jumps = 30
 					initializer = "distar_sealed_1_2"
 				}
 			}
 			#Isolate Sealed System
-			event_target:sealed_system = {
-				isolate_system = yes
-				#Create Shroud Country
-				if = {
-					limit = { NOT = { exists = event_target:shroud_country } }
-					create_country = {
-						name = "NAME_Creatures_of_the_Shroud"
-						type = shroud_spirits
-						flag = {
-							icon = {
-								category = "special"
-								file = "the_shroud.dds"
-							}
-							background= {
-								category = "backgrounds"
-								file = "00_solid.dds"
-							}
-							colors = {
-								"dark_purple"
-								"black"
-								"null"
-								"null"
+			if = {
+				limit = { exists = event_target:sealed_system }
+				event_target:sealed_system = {
+					isolate_system = yes
+					#Create Shroud Country
+					if = {
+						limit = { NOT = { exists = event_target:shroud_country } }
+						create_country = {
+							name = "NAME_Creatures_of_the_Shroud"
+							type = shroud_spirits
+							flag = {
+								icon = {
+									category = "special"
+									file = "the_shroud.dds"
+								}
+								background= {
+									category = "backgrounds"
+									file = "00_solid.dds"
+								}
+								colors = {
+									"dark_purple"
+									"black"
+									"null"
+									"null"
+								}
 							}
 						}
-					}
-					last_created_country = {
-						save_global_event_target_as = shroud_country
-					}
-				}
-				#Create Miniboss
-				create_fleet = {
-					name = "NAME_Psionic_Entity"
-					settings = {
-						spawn_debris = no
-						is_boss = yes
-					}
-					effect = {
-						set_owner = event_target:shroud_country
-						create_ship = {
-							name = "NAME_Psionic_Entity"
-							design = "NAME_Corrupted_Avatar"
+						last_created_country = {
+							save_global_event_target_as = shroud_country
 						}
-						set_location = {
-							target = prev.star
-							distance = 100
-							angle = random
+					}
+					#Create Miniboss
+					create_fleet = {
+						name = "NAME_Psionic_Entity"
+						settings = {
+							spawn_debris = no
+							is_boss = yes
 						}
-						set_fleet_stance = aggressive
-						set_aggro_range_measure_from = return_point
-						set_aggro_range = 2000
-						save_global_event_target_as = sealed_psionic_entity
+						effect = {
+							set_owner = event_target:shroud_country
+							create_ship = {
+								name = "NAME_Psionic_Entity"
+								design = "NAME_Corrupted_Avatar"
+							}
+							set_location = {
+								target = prev.star
+								distance = 100
+								angle = random
+							}
+							set_fleet_stance = aggressive
+							set_aggro_range_measure_from = return_point
+							set_aggro_range = 2000
+							save_global_event_target_as = sealed_psionic_entity
+						}
 					}
 				}
 			}
@@ -10164,9 +10176,13 @@ country_event = { #A primitive planet is nuked
 				}
 				owner = { save_event_target_as = nuked_primitives }
 				save_event_target_as = nuked_primitive_planet
-				destroy_colony = yes
-				change_pc = pc_toxic
-				reset_planet = yes
+				nuke_primitives_toxic_effect = yes
+				if = {
+					limit = { has_observation_outpost = yes }
+					observation_outpost = {
+						dismantle = yes
+					}
+				}
 			}
 		}
 	}
@@ -11321,9 +11337,6 @@ ship_event = {
 			save_event_target_as = star_lifting_leader
 		}
 		save_event_target_as = star_lifting_ship
-		from = {
-			clear_deposits = yes
-		}
 	}
 
 	option = {
@@ -11719,7 +11732,6 @@ ship_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		from = { clear_deposits = yes }
 		owner = {
 			country_event = { id = story.5 days = 30 }
 			set_country_flag = atomic_clock
@@ -12189,9 +12201,17 @@ ship_event = {
 						min_distance >= 10
 						max_distance <= 100
 					}
+					star = {
+						NOR = {
+							has_deposit_for = shipclass_research_station
+							has_deposit_for = shipclass_mining_station
+						}
+					}
 				}
 				save_event_target_as = anomalous_star_system
-				star = { save_global_event_target_as = anomalous_star }
+				star = {
+					save_global_event_target_as = anomalous_star
+				}
 			}
 		}
 		enable_special_project = {
@@ -12219,7 +12239,6 @@ country_event = {
 
 	immediate = {
 		event_target:anomalous_star = {
-			clear_deposits = yes
 			surveyed = {
  				set_surveyed = yes
    				surveyor = root
@@ -12723,9 +12742,6 @@ ship_event = {
 
 	immediate = {
 		owner = { country_event = { id = story.5 days = 30 } } 
-		From = {
-			clear_deposits = yes
-		}
 	}
 
 	option = {
@@ -13012,12 +13028,6 @@ ship_event = {
 	location = from
 	
 	is_triggered_only = yes
-
-	immediate = {
-		from = {
-			clear_deposits = yes
-		}
-	}
 
 	option = {
 		name = FASCINATING
